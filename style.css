@@ -1,0 +1,148 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.contener {
+    width: 100%;
+    height: 100vh;
+    background-color: #efefef;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.perant {
+
+    width: 80%;
+    height: 80%;
+    background-color: #ededed;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(4, 23.5%);
+    grid-template-rows: repeat(2, 49%);
+    gap: 10px 2%;
+    line-height: 1.6;
+    text-transform: capitalize;
+    letter-spacing: 1.2px;
+
+}
+
+.perant div {
+    border-radius: 10PX;
+    -webkit-border-radius: 10PX;
+    -moz-border-radius: 10PX;
+    -ms-border-radius: 10PX;
+    -o-border-radius: 10PX;
+    padding: 5px;
+    position: relative;
+    overflow: hidden;
+}
+
+.perant div:first-child {
+    grid-column: 1/3;
+    background-color: #733fc8;
+    background-image: URL(bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position-x: 80%;
+    color: white;
+
+
+}
+
+.perant .tow {
+    background-color: #49556b;
+    color: white;
+}
+
+.perant .three {
+    grid-row: 1/3;
+    grid-column: 4/5;
+    background-color: #fffffd;
+}
+
+.perant .four {
+    background-color: #fffffd;
+}
+
+.perant .five {
+    grid-column: 2/4;
+    background-color: #18202d;
+    color: white;
+}
+
+.perant div img {
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    position: absolute;
+    left: 20px;
+    top: 10px;
+    width: 30px;
+
+}
+
+.perant div .name {
+    position: relative;
+    left: 60px;
+    top: 3px;
+}
+
+.perant div .jop,
+.lorem2 {
+    position: relative;
+    left: 0;
+    top: 20px;
+    opacity: 0.5;
+
+
+}
+
+.lorem1,
+.lorem2 {
+    position: relative;
+    top: 28px;
+    margin-bottom: 5px;
+}
+
+.lorem1 {
+    font-weight: bold;
+}
+
+@media (max-width:500px) {
+
+    .contener {
+        background-color: red;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .perant {
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .perant div {
+        width: 98%;
+        padding: 10px;
+        height: max-content;
+        margin: auto;
+        margin-bottom: 10px;
+        margin-top: 20px;
+        overflow: hidden;
+
+    }
+    .perant .three{
+        background-color: #eaeaea;
+    } 
+    .perant .four{
+        background-color: #efefef;
+    } 
+}
